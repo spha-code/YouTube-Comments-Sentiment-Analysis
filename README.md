@@ -27,7 +27,7 @@ The following script is used to collect YouTube comments via the YouTube Data AP
      - Model Evaluation with MLflow
      - Model Register in MLflow
        
-  9. Add our Model to Mdodel Registry
+  9. Add our Model to Model Registry
   10. Implement Chrome plugin
   11. Prepare CI/CD workflow
   12. Dockerization
