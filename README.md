@@ -10,7 +10,7 @@ The following script is used to collect YouTube comments via the YouTube Data AP
  
  4. Build Baseline Model
  
- 5. Setup MLflow server on AWS - Experiment Tracking
+ 5. Setup MLflow server on locally - Experiment Tracking
  
  6. Improve Baseline Model
      - TFIDF
