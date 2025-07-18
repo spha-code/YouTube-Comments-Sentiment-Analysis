@@ -1,20 +1,21 @@
 # youtube_sentiment_analysis
 youtube_sentiment_analysis
  1. Data collection
- 2. Data Preprocessing and EDA (Exported Data Analysis)
- 3. Build Baseline Model
- 4. Setup MLflow server on AWS - Experiment Tracking
- 5. Improve Baseline Model
+    with this ![Python Script](https://github.com/spha-code/YouTube_Comments_Sentiment_Analysis/blob/main/00_Python_YouTube_Comments_Scraper.py)
+ 3. Data Preprocessing and EDA (Exported Data Analysis)
+ 4. Build Baseline Model
+ 5. Setup MLflow server on AWS - Experiment Tracking
+ 6. Improve Baseline Model
       TFIDF
       Max Feature
       Handling Imbalanced Data
       Hyperparameter tuning
       Multiple Model
       Stacking Model
-  6. ML Pipeline using DVC
-  7. Add our Model to Mdodel Registry
-  8. Implement Chrome plugin
-  9. Prepare CI/CD workflow
-  10. Dockerization
-  11. Deployment - AWS
-  12. Github upload
+  7. ML Pipeline using DVC
+  8. Add our Model to Mdodel Registry
+  9. Implement Chrome plugin
+  10. Prepare CI/CD workflow
+  11. Dockerization
+  12. Deployment - AWS
+  13. Github upload
