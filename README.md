@@ -1,7 +1,12 @@
 # youtube_sentiment_analysis
 youtube_sentiment_analysis
  1. Data collection
-    with this ![Python Script](https://github.com/spha-code/YouTube_Comments_Sentiment_Analysis/blob/main/00_Python_YouTube_Comments_Scraper.py)
+ ## Data Collection
+
+The following script is used to collect YouTube comments via the YouTube Data API:
+
+📄 [00_Python_YouTube_Comments_Scraper.py](https://github.com/spha-code/YouTube_Comments_Sentiment_Analysis/blob/main/00_Python_YouTube_Comments_Scraper.py)
+
  3. Data Preprocessing and EDA (Exported Data Analysis)
  4. Build Baseline Model
  5. Setup MLflow server on AWS - Experiment Tracking
