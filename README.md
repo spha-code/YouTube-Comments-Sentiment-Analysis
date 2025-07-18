@@ -1,7 +1,6 @@
-# youtube_sentiment_analysis
-youtube_sentiment_analysis
- 1. Data collection
- ## Data Collection
+# YouTube Comments Sentiment Analysis
+
+ ## 1. Data Collection
 
 The following script is used to collect YouTube comments via the YouTube Data API:
 
