@@ -1,0 +1,721 @@
+artifact_path: lgbm_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 2.22.1
+model_size_bytes: 4048150
+model_uuid: f3113e20d72148a8b63b92d1fe188ce0
+prompts: null
+run_id: 690164170af24ea68ee80a7c290c842e
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "000", "required": true}, {"type": "double",
+    "name": "000 000", "required": true}, {"type": "double", "name": "10", "required":
+    true}, {"type": "double", "name": "10 year", "required": true}, {"type": "double",
+    "name": "100", "required": true}, {"type": "double", "name": "11", "required":
+    true}, {"type": "double", "name": "11 year", "required": true}, {"type": "double",
+    "name": "12", "required": true}, {"type": "double", "name": "13", "required":
+    true}, {"type": "double", "name": "14", "required": true}, {"type": "double",
+    "name": "15", "required": true}, {"type": "double", "name": "16", "required":
+    true}, {"type": "double", "name": "20", "required": true}, {"type": "double",
+    "name": "2007", "required": true}, {"type": "double", "name": "2009", "required":
+    true}, {"type": "double", "name": "2011", "required": true}, {"type": "double",
+    "name": "2012", "required": true}, {"type": "double", "name": "2013", "required":
+    true}, {"type": "double", "name": "2015", "required": true}, {"type": "double",
+    "name": "2016", "required": true}, {"type": "double", "name": "2017", "required":
+    true}, {"type": "double", "name": "2018", "required": true}, {"type": "double",
+    "name": "2019", "required": true}, {"type": "double", "name": "2020", "required":
+    true}, {"type": "double", "name": "2021", "required": true}, {"type": "double",
+    "name": "2022", "required": true}, {"type": "double", "name": "2023", "required":
+    true}, {"type": "double", "name": "2024", "required": true}, {"type": "double",
+    "name": "2025", "required": true}, {"type": "double", "name": "25", "required":
+    true}, {"type": "double", "name": "30", "required": true}, {"type": "double",
+    "name": "50", "required": true}, {"type": "double", "name": "act", "required":
+    true}, {"type": "double", "name": "act like", "required": true}, {"type": "double",
+    "name": "action", "required": true}, {"type": "double", "name": "actually", "required":
+    true}, {"type": "double", "name": "ad", "required": true}, {"type": "double",
+    "name": "add", "required": true}, {"type": "double", "name": "again", "required":
+    true}, {"type": "double", "name": "ago", "required": true}, {"type": "double",
+    "name": "agree", "required": true}, {"type": "double", "name": "ahead", "required":
+    true}, {"type": "double", "name": "aint", "required": true}, {"type": "double",
+    "name": "akira", "required": true}, {"type": "double", "name": "akira reference",
+    "required": true}, {"type": "double", "name": "album", "required": true}, {"type":
+    "double", "name": "algum", "required": true}, {"type": "double", "name": "alive",
+    "required": true}, {"type": "double", "name": "all", "required": true}, {"type":
+    "double", "name": "almost", "required": true}, {"type": "double", "name": "alot",
+    "required": true}, {"type": "double", "name": "already", "required": true}, {"type":
+    "double", "name": "also", "required": true}, {"type": "double", "name": "always",
+    "required": true}, {"type": "double", "name": "amazing", "required": true}, {"type":
+    "double", "name": "america", "required": true}, {"type": "double", "name": "american",
+    "required": true}, {"type": "double", "name": "and", "required": true}, {"type":
+    "double", "name": "anime", "required": true}, {"type": "double", "name": "anime
+    akira", "required": true}, {"type": "double", "name": "anime movie", "required":
+    true}, {"type": "double", "name": "another", "required": true}, {"type": "double",
+    "name": "anthem", "required": true}, {"type": "double", "name": "anybody", "required":
+    true}, {"type": "double", "name": "anymore", "required": true}, {"type": "double",
+    "name": "anyone", "required": true}, {"type": "double", "name": "anyone else",
+    "required": true}, {"type": "double", "name": "anything", "required": true}, {"type":
+    "double", "name": "anyway", "required": true}, {"type": "double", "name": "appreciate",
+    "required": true}, {"type": "double", "name": "aqui", "required": true}, {"type":
+    "double", "name": "arent", "required": true}, {"type": "double", "name": "around",
+    "required": true}, {"type": "double", "name": "art", "required": true}, {"type":
+    "double", "name": "artist", "required": true}, {"type": "double", "name": "asian",
+    "required": true}, {"type": "double", "name": "ask", "required": true}, {"type":
+    "double", "name": "asked", "required": true}, {"type": "double", "name": "asshole",
+    "required": true}, {"type": "double", "name": "away", "required": true}, {"type":
+    "double", "name": "awesome", "required": true}, {"type": "double", "name": "awesome
+    song", "required": true}, {"type": "double", "name": "awsome", "required": true},
+    {"type": "double", "name": "baby", "required": true}, {"type": "double", "name":
+    "back", "required": true}, {"type": "double", "name": "back down", "required":
+    true}, {"type": "double", "name": "back kanye", "required": true}, {"type": "double",
+    "name": "background", "required": true}, {"type": "double", "name": "bad", "required":
+    true}, {"type": "double", "name": "band", "required": true}, {"type": "double",
+    "name": "banger", "required": true}, {"type": "double", "name": "bar", "required":
+    true}, {"type": "double", "name": "based", "required": true}, {"type": "double",
+    "name": "basically", "required": true}, {"type": "double", "name": "beast", "required":
+    true}, {"type": "double", "name": "beat", "required": true}, {"type": "double",
+    "name": "beautiful", "required": true}, {"type": "double", "name": "became", "required":
+    true}, {"type": "double", "name": "become", "required": true}, {"type": "double",
+    "name": "beginning", "required": true}, {"type": "double", "name": "believe",
+    "required": true}, {"type": "double", "name": "best", "required": true}, {"type":
+    "double", "name": "best part", "required": true}, {"type": "double", "name": "best
+    song", "required": true}, {"type": "double", "name": "best song ever", "required":
+    true}, {"type": "double", "name": "bet", "required": true}, {"type": "double",
+    "name": "better", "required": true}, {"type": "double", "name": "better daft",
+    "required": true}, {"type": "double", "name": "better daft punk", "required":
+    true}, {"type": "double", "name": "better faster", "required": true}, {"type":
+    "double", "name": "better faster make", "required": true}, {"type": "double",
+    "name": "better faster stronger", "required": true}, {"type": "double", "name":
+    "bieber", "required": true}, {"type": "double", "name": "big", "required": true},
+    {"type": "double", "name": "birdsong", "required": true}, {"type": "double", "name":
+    "bit", "required": true}, {"type": "double", "name": "bitch", "required": true},
+    {"type": "double", "name": "black", "required": true}, {"type": "double", "name":
+    "black kate", "required": true}, {"type": "double", "name": "black kate moss",
+    "required": true}, {"type": "double", "name": "born", "required": true}, {"type":
+    "double", "name": "bos", "required": true}, {"type": "double", "name": "bottle",
+    "required": true}, {"type": "double", "name": "bottle baby", "required": true},
+    {"type": "double", "name": "boy", "required": true}, {"type": "double", "name":
+    "br", "required": true}, {"type": "double", "name": "bring", "required": true},
+    {"type": "double", "name": "brings", "required": true}, {"type": "double", "name":
+    "bro", "required": true}, {"type": "double", "name": "brother", "required": true},
+    {"type": "double", "name": "brought", "required": true}, {"type": "double", "name":
+    "btw", "required": true}, {"type": "double", "name": "bullshit", "required": true},
+    {"type": "double", "name": "but", "required": true}, {"type": "double", "name":
+    "but daft", "required": true}, {"type": "double", "name": "but daft punk", "required":
+    true}, {"type": "double", "name": "but dont", "required": true}, {"type": "double",
+    "name": "but im", "required": true}, {"type": "double", "name": "but kanye", "required":
+    true}, {"type": "double", "name": "but like", "required": true}, {"type": "double",
+    "name": "but not", "required": true}, {"type": "double", "name": "but song", "required":
+    true}, {"type": "double", "name": "but still", "required": true}, {"type": "double",
+    "name": "button", "required": true}, {"type": "double", "name": "call", "required":
+    true}, {"type": "double", "name": "called", "required": true}, {"type": "double",
+    "name": "came", "required": true}, {"type": "double", "name": "cancin", "required":
+    true}, {"type": "double", "name": "cant", "required": true}, {"type": "double",
+    "name": "cant believe", "required": true}, {"type": "double", "name": "cant get",
+    "required": true}, {"type": "double", "name": "cant get much", "required": true},
+    {"type": "double", "name": "cant wait", "required": true}, {"type": "double",
+    "name": "cant wait much", "required": true}, {"type": "double", "name": "car",
+    "required": true}, {"type": "double", "name": "care", "required": true}, {"type":
+    "double", "name": "cassie", "required": true}, {"type": "double", "name": "cause",
+    "required": true}, {"type": "double", "name": "cause cant", "required": true},
+    {"type": "double", "name": "chance", "required": true}, {"type": "double", "name":
+    "change", "required": true}, {"type": "double", "name": "changed", "required":
+    true}, {"type": "double", "name": "channel", "required": true}, {"type": "double",
+    "name": "check", "required": true}, {"type": "double", "name": "child", "required":
+    true}, {"type": "double", "name": "childhood", "required": true}, {"type": "double",
+    "name": "christ", "required": true}, {"type": "double", "name": "classic", "required":
+    true}, {"type": "double", "name": "click", "required": true}, {"type": "double",
+    "name": "clip", "required": true}, {"type": "double", "name": "cola", "required":
+    true}, {"type": "double", "name": "cola bottle", "required": true}, {"type": "double",
+    "name": "cola bottle baby", "required": true}, {"type": "double", "name": "com",
+    "required": true}, {"type": "double", "name": "come", "required": true}, {"type":
+    "double", "name": "come back", "required": true}, {"type": "double", "name": "coming",
+    "required": true}, {"type": "double", "name": "comment", "required": true}, {"type":
+    "double", "name": "comments", "required": true}, {"type": "double", "name": "completely",
+    "required": true}, {"type": "double", "name": "cool", "required": true}, {"type":
+    "double", "name": "copied", "required": true}, {"type": "double", "name": "copy",
+    "required": true}, {"type": "double", "name": "could", "required": true}, {"type":
+    "double", "name": "couldnt", "required": true}, {"type": "double", "name": "cover",
+    "required": true}, {"type": "double", "name": "crap", "required": true}, {"type":
+    "double", "name": "crazy", "required": true}, {"type": "double", "name": "credit",
+    "required": true}, {"type": "double", "name": "credit daft", "required": true},
+    {"type": "double", "name": "credit daft punk", "required": true}, {"type": "double",
+    "name": "cuz", "required": true}, {"type": "double", "name": "da", "required":
+    true}, {"type": "double", "name": "dad", "required": true}, {"type": "double",
+    "name": "daft", "required": true}, {"type": "double", "name": "daft punk", "required":
+    true}, {"type": "double", "name": "daft punk best", "required": true}, {"type":
+    "double", "name": "daft punk better", "required": true}, {"type": "double", "name":
+    "daft punk but", "required": true}, {"type": "double", "name": "daft punk daft",
+    "required": true}, {"type": "double", "name": "daft punk fan", "required": true},
+    {"type": "double", "name": "daft punk ft", "required": true}, {"type": "double",
+    "name": "daft punk harder", "required": true}, {"type": "double", "name": "daft
+    punk kanye", "required": true}, {"type": "double", "name": "daft punk made", "required":
+    true}, {"type": "double", "name": "daft punk make", "required": true}, {"type":
+    "double", "name": "daft punk music", "required": true}, {"type": "double", "name":
+    "daft punk not", "required": true}, {"type": "double", "name": "daft punk original",
+    "required": true}, {"type": "double", "name": "daft punk sampled", "required":
+    true}, {"type": "double", "name": "daft punk song", "required": true}, {"type":
+    "double", "name": "daft punk stronger", "required": true}, {"type": "double",
+    "name": "daft punk version", "required": true}, {"type": "double", "name": "daft
+    punk video", "required": true}, {"type": "double", "name": "daftpunk", "required":
+    true}, {"type": "double", "name": "damn", "required": true}, {"type": "double",
+    "name": "dance", "required": true}, {"type": "double", "name": "dat", "required":
+    true}, {"type": "double", "name": "day", "required": true}, {"type": "double",
+    "name": "de", "required": true}, {"type": "double", "name": "dead", "required":
+    true}, {"type": "double", "name": "description", "required": true}, {"type": "double",
+    "name": "dick", "required": true}, {"type": "double", "name": "didnt", "required":
+    true}, {"type": "double", "name": "didnt even", "required": true}, {"type": "double",
+    "name": "didnt know", "required": true}, {"type": "double", "name": "die", "required":
+    true}, {"type": "double", "name": "died", "required": true}, {"type": "double",
+    "name": "different", "required": true}, {"type": "double", "name": "dis", "required":
+    true}, {"type": "double", "name": "dislike", "required": true}, {"type": "double",
+    "name": "dj", "required": true}, {"type": "double", "name": "do", "required":
+    true}, {"type": "double", "name": "doesnt", "required": true}, {"type": "double",
+    "name": "dog", "required": true}, {"type": "double", "name": "done", "required":
+    true}, {"type": "double", "name": "dont", "required": true}, {"type": "double",
+    "name": "dont act", "required": true}, {"type": "double", "name": "dont act like",
+    "required": true}, {"type": "double", "name": "dont care", "required": true},
+    {"type": "double", "name": "dont even", "required": true}, {"type": "double",
+    "name": "dont get", "required": true}, {"type": "double", "name": "dont give",
+    "required": true}, {"type": "double", "name": "dont kill", "required": true},
+    {"type": "double", "name": "dont kill make", "required": true}, {"type": "double",
+    "name": "dont know", "required": true}, {"type": "double", "name": "dont like",
+    "required": true}, {"type": "double", "name": "dont make", "required": true},
+    {"type": "double", "name": "dont think", "required": true}, {"type": "double",
+    "name": "dope", "required": true}, {"type": "double", "name": "douche", "required":
+    true}, {"type": "double", "name": "down", "required": true}, {"type": "double",
+    "name": "dp", "required": true}, {"type": "double", "name": "draft", "required":
+    true}, {"type": "double", "name": "draft punk", "required": true}, {"type": "double",
+    "name": "dream", "required": true}, {"type": "double", "name": "dude", "required":
+    true}, {"type": "double", "name": "dumb", "required": true}, {"type": "double",
+    "name": "dumbass", "required": true}, {"type": "double", "name": "edwin", "required":
+    true}, {"type": "double", "name": "edwin birdsong", "required": true}, {"type":
+    "double", "name": "ego", "required": true}, {"type": "double", "name": "either",
+    "required": true}, {"type": "double", "name": "el", "required": true}, {"type":
+    "double", "name": "else", "required": true}, {"type": "double", "name": "em",
+    "required": true}, {"type": "double", "name": "eminem", "required": true}, {"type":
+    "double", "name": "en", "required": true}, {"type": "double", "name": "end", "required":
+    true}, {"type": "double", "name": "english", "required": true}, {"type": "double",
+    "name": "enjoy", "required": true}, {"type": "double", "name": "enough", "required":
+    true}, {"type": "double", "name": "entire", "required": true}, {"type": "double",
+    "name": "epic", "required": true}, {"type": "double", "name": "era", "required":
+    true}, {"type": "double", "name": "essa", "required": true}, {"type": "double",
+    "name": "essa msica", "required": true}, {"type": "double", "name": "esta", "required":
+    true}, {"type": "double", "name": "eu", "required": true}, {"type": "double",
+    "name": "even", "required": true}, {"type": "double", "name": "even though", "required":
+    true}, {"type": "double", "name": "ever", "required": true}, {"type": "double",
+    "name": "every", "required": true}, {"type": "double", "name": "everybody", "required":
+    true}, {"type": "double", "name": "everyday", "required": true}, {"type": "double",
+    "name": "everyone", "required": true}, {"type": "double", "name": "everything",
+    "required": true}, {"type": "double", "name": "exactly", "required": true}, {"type":
+    "double", "name": "face", "required": true}, {"type": "double", "name": "fact",
+    "required": true}, {"type": "double", "name": "fake", "required": true}, {"type":
+    "double", "name": "famous", "required": true}, {"type": "double", "name": "fan",
+    "required": true}, {"type": "double", "name": "far", "required": true}, {"type":
+    "double", "name": "faster", "required": true}, {"type": "double", "name": "faster
+    make", "required": true}, {"type": "double", "name": "faster make stronger", "required":
+    true}, {"type": "double", "name": "faster stronger", "required": true}, {"type":
+    "double", "name": "faster stronger daft", "required": true}, {"type": "double",
+    "name": "fav", "required": true}, {"type": "double", "name": "favorite", "required":
+    true}, {"type": "double", "name": "favorite song", "required": true}, {"type":
+    "double", "name": "favourite", "required": true}, {"type": "double", "name": "feat",
+    "required": true}, {"type": "double", "name": "feat daft", "required": true},
+    {"type": "double", "name": "feat daft punk", "required": true}, {"type": "double",
+    "name": "feature", "required": true}, {"type": "double", "name": "featuring",
+    "required": true}, {"type": "double", "name": "feel", "required": true}, {"type":
+    "double", "name": "feel like", "required": true}, {"type": "double", "name": "feeling",
+    "required": true}, {"type": "double", "name": "fight", "required": true}, {"type":
+    "double", "name": "film", "required": true}, {"type": "double", "name": "filme",
+    "required": true}, {"type": "double", "name": "finally", "required": true}, {"type":
+    "double", "name": "find", "required": true}, {"type": "double", "name": "fine",
+    "required": true}, {"type": "double", "name": "finish", "required": true}, {"type":
+    "double", "name": "finish but", "required": true}, {"type": "double", "name":
+    "fire", "required": true}, {"type": "double", "name": "first", "required": true},
+    {"type": "double", "name": "first time", "required": true}, {"type": "double",
+    "name": "fish", "required": true}, {"type": "double", "name": "forever", "required":
+    true}, {"type": "double", "name": "forget", "required": true}, {"type": "double",
+    "name": "forgot", "required": true}, {"type": "double", "name": "found", "required":
+    true}, {"type": "double", "name": "free", "required": true}, {"type": "double",
+    "name": "french", "required": true}, {"type": "double", "name": "friend", "required":
+    true}, {"type": "double", "name": "ft", "required": true}, {"type": "double",
+    "name": "ft daft", "required": true}, {"type": "double", "name": "ft daft punk",
+    "required": true}, {"type": "double", "name": "ft kanye", "required": true}, {"type":
+    "double", "name": "ft kanye west", "required": true}, {"type": "double", "name":
+    "ftw", "required": true}, {"type": "double", "name": "fuck", "required": true},
+    {"type": "double", "name": "fuck kanye", "required": true}, {"type": "double",
+    "name": "fuckin", "required": true}, {"type": "double", "name": "fucking", "required":
+    true}, {"type": "double", "name": "full", "required": true}, {"type": "double",
+    "name": "fun", "required": true}, {"type": "double", "name": "funny", "required":
+    true}, {"type": "double", "name": "future", "required": true}, {"type": "double",
+    "name": "game", "required": true}, {"type": "double", "name": "gave", "required":
+    true}, {"type": "double", "name": "gay", "required": true}, {"type": "double",
+    "name": "gay fish", "required": true}, {"type": "double", "name": "gayfish", "required":
+    true}, {"type": "double", "name": "genius", "required": true}, {"type": "double",
+    "name": "get", "required": true}, {"type": "double", "name": "get much", "required":
+    true}, {"type": "double", "name": "get much wronger", "required": true}, {"type":
+    "double", "name": "get old", "required": true}, {"type": "double", "name": "getting",
+    "required": true}, {"type": "double", "name": "girl", "required": true}, {"type":
+    "double", "name": "give", "required": true}, {"type": "double", "name": "give
+    credit", "required": true}, {"type": "double", "name": "giving", "required": true},
+    {"type": "double", "name": "glass", "required": true}, {"type": "double", "name":
+    "go", "required": true}, {"type": "double", "name": "goat", "required": true},
+    {"type": "double", "name": "god", "required": true}, {"type": "double", "name":
+    "going", "required": true}, {"type": "double", "name": "gold", "required": true},
+    {"type": "double", "name": "gone", "required": true}, {"type": "double", "name":
+    "gonna", "required": true}, {"type": "double", "name": "good", "required": true},
+    {"type": "double", "name": "good but", "required": true}, {"type": "double", "name":
+    "good music", "required": true}, {"type": "double", "name": "good song", "required":
+    true}, {"type": "double", "name": "got", "required": true}, {"type": "double",
+    "name": "got right", "required": true}, {"type": "double", "name": "gotta", "required":
+    true}, {"type": "double", "name": "graduation", "required": true}, {"type": "double",
+    "name": "great", "required": true}, {"type": "double", "name": "great song", "required":
+    true}, {"type": "double", "name": "greatest", "required": true}, {"type": "double",
+    "name": "guess", "required": true}, {"type": "double", "name": "guy", "required":
+    true}, {"type": "double", "name": "guys", "required": true}, {"type": "double",
+    "name": "gym", "required": true}, {"type": "double", "name": "ha", "required":
+    true}, {"type": "double", "name": "haha", "required": true}, {"type": "double",
+    "name": "hahaha", "required": true}, {"type": "double", "name": "half", "required":
+    true}, {"type": "double", "name": "hand", "required": true}, {"type": "double",
+    "name": "hangover", "required": true}, {"type": "double", "name": "happened",
+    "required": true}, {"type": "double", "name": "happy", "required": true}, {"type":
+    "double", "name": "hard", "required": true}, {"type": "double", "name": "harder",
+    "required": true}, {"type": "double", "name": "harder better", "required": true},
+    {"type": "double", "name": "harder better faster", "required": true}, {"type":
+    "double", "name": "harder make", "required": true}, {"type": "double", "name":
+    "harder make better", "required": true}, {"type": "double", "name": "hate", "required":
+    true}, {"type": "double", "name": "hate kanye", "required": true}, {"type": "double",
+    "name": "hater", "required": true}, {"type": "double", "name": "haters", "required":
+    true}, {"type": "double", "name": "hating", "required": true}, {"type": "double",
+    "name": "havent", "required": true}, {"type": "double", "name": "head", "required":
+    true}, {"type": "double", "name": "hear", "required": true}, {"type": "double",
+    "name": "heard", "required": true}, {"type": "double", "name": "heard song", "required":
+    true}, {"type": "double", "name": "hearing", "required": true}, {"type": "double",
+    "name": "heart", "required": true}, {"type": "double", "name": "hell", "required":
+    true}, {"type": "double", "name": "hello", "required": true}, {"type": "double",
+    "name": "helmet", "required": true}, {"type": "double", "name": "help", "required":
+    true}, {"type": "double", "name": "here", "required": true}, {"type": "double",
+    "name": "hey", "required": true}, {"type": "double", "name": "hi", "required":
+    true}, {"type": "double", "name": "high", "required": true}, {"type": "double",
+    "name": "him", "required": true}, {"type": "double", "name": "hip", "required":
+    true}, {"type": "double", "name": "hip hop", "required": true}, {"type": "double",
+    "name": "hiphop", "required": true}, {"type": "double", "name": "history", "required":
+    true}, {"type": "double", "name": "hit", "required": true}, {"type": "double",
+    "name": "holy", "required": true}, {"type": "double", "name": "honestly", "required":
+    true}, {"type": "double", "name": "hop", "required": true}, {"type": "double",
+    "name": "hope", "required": true}, {"type": "double", "name": "hospital", "required":
+    true}, {"type": "double", "name": "hot", "required": true}, {"type": "double",
+    "name": "hour", "required": true}, {"type": "double", "name": "house", "required":
+    true}, {"type": "double", "name": "httpsyoutu", "required": true}, {"type": "double",
+    "name": "huge", "required": true}, {"type": "double", "name": "human", "required":
+    true}, {"type": "double", "name": "hurry", "required": true}, {"type": "double",
+    "name": "id", "required": true}, {"type": "double", "name": "idea", "required":
+    true}, {"type": "double", "name": "idiot", "required": true}, {"type": "double",
+    "name": "ill", "required": true}, {"type": "double", "name": "illuminati", "required":
+    true}, {"type": "double", "name": "im", "required": true}, {"type": "double",
+    "name": "im listening", "required": true}, {"type": "double", "name": "im not",
+    "required": true}, {"type": "double", "name": "imagine", "required": true}, {"type":
+    "double", "name": "imma", "required": true}, {"type": "double", "name": "in",
+    "required": true}, {"type": "double", "name": "inspiration", "required": true},
+    {"type": "double", "name": "inspired", "required": true}, {"type": "double", "name":
+    "instead", "required": true}, {"type": "double", "name": "internet", "required":
+    true}, {"type": "double", "name": "intro", "required": true}, {"type": "double",
+    "name": "is", "required": true}, {"type": "double", "name": "isnt", "required":
+    true}, {"type": "double", "name": "it", "required": true}, {"type": "double",
+    "name": "it make", "required": true}, {"type": "double", "name": "ive", "required":
+    true}, {"type": "double", "name": "jam", "required": true}, {"type": "double",
+    "name": "japan", "required": true}, {"type": "double", "name": "japanese", "required":
+    true}, {"type": "double", "name": "je", "required": true}, {"type": "double",
+    "name": "jesus", "required": true}, {"type": "double", "name": "job", "required":
+    true}, {"type": "double", "name": "joke", "required": true}, {"type": "double",
+    "name": "justin", "required": true}, {"type": "double", "name": "justin bieber",
+    "required": true}, {"type": "double", "name": "kanye", "required": true}, {"type":
+    "double", "name": "kanye but", "required": true}, {"type": "double", "name": "kanye
+    daft", "required": true}, {"type": "double", "name": "kanye daft punk", "required":
+    true}, {"type": "double", "name": "kanye like", "required": true}, {"type": "double",
+    "name": "kanye made", "required": true}, {"type": "double", "name": "kanye not",
+    "required": true}, {"type": "double", "name": "kanye song", "required": true},
+    {"type": "double", "name": "kanye west", "required": true}, {"type": "double",
+    "name": "kanye west daft", "required": true}, {"type": "double", "name": "kanye
+    west song", "required": true}, {"type": "double", "name": "kanye west stronger",
+    "required": true}, {"type": "double", "name": "kanyes", "required": true}, {"type":
+    "double", "name": "kardashian", "required": true}, {"type": "double", "name":
+    "kate", "required": true}, {"type": "double", "name": "kate moss", "required":
+    true}, {"type": "double", "name": "kayne", "required": true}, {"type": "double",
+    "name": "kayne west", "required": true}, {"type": "double", "name": "keep", "required":
+    true}, {"type": "double", "name": "kid", "required": true}, {"type": "double",
+    "name": "kill", "required": true}, {"type": "double", "name": "kill make", "required":
+    true}, {"type": "double", "name": "kill make stronger", "required": true}, {"type":
+    "double", "name": "kim", "required": true}, {"type": "double", "name": "kind",
+    "required": true}, {"type": "double", "name": "kinda", "required": true}, {"type":
+    "double", "name": "king", "required": true}, {"type": "double", "name": "knew",
+    "required": true}, {"type": "double", "name": "know", "required": true}, {"type":
+    "double", "name": "know daft", "required": true}, {"type": "double", "name": "know
+    daft punk", "required": true}, {"type": "double", "name": "know got", "required":
+    true}, {"type": "double", "name": "know kanye", "required": true}, {"type": "double",
+    "name": "know song", "required": true}, {"type": "double", "name": "la", "required":
+    true}, {"type": "double", "name": "last", "required": true}, {"type": "double",
+    "name": "late", "required": true}, {"type": "double", "name": "later", "required":
+    true}, {"type": "double", "name": "le", "required": true}, {"type": "double",
+    "name": "learn", "required": true}, {"type": "double", "name": "least", "required":
+    true}, {"type": "double", "name": "leave", "required": true}, {"type": "double",
+    "name": "left", "required": true}, {"type": "double", "name": "legend", "required":
+    true}, {"type": "double", "name": "legendary", "required": true}, {"type": "double",
+    "name": "less", "required": true}, {"type": "double", "name": "let", "required":
+    true}, {"type": "double", "name": "let finish", "required": true}, {"type": "double",
+    "name": "let finish but", "required": true}, {"type": "double", "name": "let get",
+    "required": true}, {"type": "double", "name": "life", "required": true}, {"type":
+    "double", "name": "light", "required": true}, {"type": "double", "name": "like",
+    "required": true}, {"type": "double", "name": "like anymore", "required": true},
+    {"type": "double", "name": "like daft", "required": true}, {"type": "double",
+    "name": "like daft punk", "required": true}, {"type": "double", "name": "like
+    kanye", "required": true}, {"type": "double", "name": "like kanye west", "required":
+    true}, {"type": "double", "name": "like like", "required": true}, {"type": "double",
+    "name": "like never", "required": true}, {"type": "double", "name": "like song",
+    "required": true}, {"type": "double", "name": "liked", "required": true}, {"type":
+    "double", "name": "lil", "required": true}, {"type": "double", "name": "line",
+    "required": true}, {"type": "double", "name": "listen", "required": true}, {"type":
+    "double", "name": "listen song", "required": true}, {"type": "double", "name":
+    "listened", "required": true}, {"type": "double", "name": "listening", "required":
+    true}, {"type": "double", "name": "listening song", "required": true}, {"type":
+    "double", "name": "literally", "required": true}, {"type": "double", "name": "little",
+    "required": true}, {"type": "double", "name": "live", "required": true}, {"type":
+    "double", "name": "lmao", "required": true}, {"type": "double", "name": "lol",
+    "required": true}, {"type": "double", "name": "long", "required": true}, {"type":
+    "double", "name": "longer", "required": true}, {"type": "double", "name": "look",
+    "required": true}, {"type": "double", "name": "look like", "required": true},
+    {"type": "double", "name": "looking", "required": true}, {"type": "double", "name":
+    "lord", "required": true}, {"type": "double", "name": "los", "required": true},
+    {"type": "double", "name": "lost", "required": true}, {"type": "double", "name":
+    "lot", "required": true}, {"type": "double", "name": "love", "required": true},
+    {"type": "double", "name": "love daft", "required": true}, {"type": "double",
+    "name": "love daft punk", "required": true}, {"type": "double", "name": "love
+    kanye", "required": true}, {"type": "double", "name": "love song", "required":
+    true}, {"type": "double", "name": "loved", "required": true}, {"type": "double",
+    "name": "lyric", "required": true}, {"type": "double", "name": "lyrics", "required":
+    true}, {"type": "double", "name": "machine", "required": true}, {"type": "double",
+    "name": "mad", "required": true}, {"type": "double", "name": "made", "required":
+    true}, {"type": "double", "name": "made graduation", "required": true}, {"type":
+    "double", "name": "made song", "required": true}, {"type": "double", "name": "make",
+    "required": true}, {"type": "double", "name": "make better", "required": true},
+    {"type": "double", "name": "make better faster", "required": true}, {"type": "double",
+    "name": "make good", "required": true}, {"type": "double", "name": "make harder",
+    "required": true}, {"type": "double", "name": "make harder better", "required":
+    true}, {"type": "double", "name": "make it", "required": true}, {"type": "double",
+    "name": "make music", "required": true}, {"type": "double", "name": "make real",
+    "required": true}, {"type": "double", "name": "make real shit", "required": true},
+    {"type": "double", "name": "make song", "required": true}, {"type": "double",
+    "name": "make stronger", "required": true}, {"type": "double", "name": "make stronger
+    need", "required": true}, {"type": "double", "name": "making", "required": true},
+    {"type": "double", "name": "man", "required": true}, {"type": "double", "name":
+    "many", "required": true}, {"type": "double", "name": "many people", "required":
+    true}, {"type": "double", "name": "masterpiece", "required": true}, {"type": "double",
+    "name": "matter", "required": true}, {"type": "double", "name": "may", "required":
+    true}, {"type": "double", "name": "maybe", "required": true}, {"type": "double",
+    "name": "me", "required": true}, {"type": "double", "name": "mean", "required":
+    true}, {"type": "double", "name": "memory", "required": true}, {"type": "double",
+    "name": "mention", "required": true}, {"type": "double", "name": "message", "required":
+    true}, {"type": "double", "name": "mi", "required": true}, {"type": "double",
+    "name": "might", "required": true}, {"type": "double", "name": "million", "required":
+    true}, {"type": "double", "name": "mind", "required": true}, {"type": "double",
+    "name": "minute", "required": true}, {"type": "double", "name": "miss", "required":
+    true}, {"type": "double", "name": "miss old", "required": true}, {"type": "double",
+    "name": "mix", "required": true}, {"type": "double", "name": "mom", "required":
+    true}, {"type": "double", "name": "moment", "required": true}, {"type": "double",
+    "name": "money", "required": true}, {"type": "double", "name": "more", "required":
+    true}, {"type": "double", "name": "moss", "required": true}, {"type": "double",
+    "name": "movie", "required": true}, {"type": "double", "name": "movie akira",
+    "required": true}, {"type": "double", "name": "mr", "required": true}, {"type":
+    "double", "name": "msica", "required": true}, {"type": "double", "name": "much",
+    "required": true}, {"type": "double", "name": "much better", "required": true},
+    {"type": "double", "name": "much longer", "required": true}, {"type": "double",
+    "name": "much wronger", "required": true}, {"type": "double", "name": "muito",
+    "required": true}, {"type": "double", "name": "music", "required": true}, {"type":
+    "double", "name": "music video", "required": true}, {"type": "double", "name":
+    "musica", "required": true}, {"type": "double", "name": "musical", "required":
+    true}, {"type": "double", "name": "musician", "required": true}, {"type": "double",
+    "name": "must", "required": true}, {"type": "double", "name": "na", "required":
+    true}, {"type": "double", "name": "name", "required": true}, {"type": "double",
+    "name": "need", "required": true}, {"type": "double", "name": "need hurry", "required":
+    true}, {"type": "double", "name": "need right", "required": true}, {"type": "double",
+    "name": "never", "required": true}, {"type": "double", "name": "never back", "required":
+    true}, {"type": "double", "name": "never back down", "required": true}, {"type":
+    "double", "name": "never get", "required": true}, {"type": "double", "name": "never
+    told", "required": true}, {"type": "double", "name": "new", "required": true},
+    {"type": "double", "name": "next", "required": true}, {"type": "double", "name":
+    "nice", "required": true}, {"type": "double", "name": "nigga", "required": true},
+    {"type": "double", "name": "night", "required": true}, {"type": "double", "name":
+    "no", "required": true}, {"type": "double", "name": "no no", "required": true},
+    {"type": "double", "name": "no no no", "required": true}, {"type": "double", "name":
+    "no one", "required": true}, {"type": "double", "name": "nobody", "required":
+    true}, {"type": "double", "name": "nostalgia", "required": true}, {"type": "double",
+    "name": "not", "required": true}, {"type": "double", "name": "not even", "required":
+    true}, {"type": "double", "name": "not kanye", "required": true}, {"type": "double",
+    "name": "nothing", "required": true}, {"type": "double", "name": "notice", "required":
+    true}, {"type": "double", "name": "noticed", "required": true}, {"type": "double",
+    "name": "now", "required": true}, {"type": "double", "name": "number", "required":
+    true}, {"type": "double", "name": "obviously", "required": true}, {"type": "double",
+    "name": "off", "required": true}, {"type": "double", "name": "oh", "required":
+    true}, {"type": "double", "name": "ok", "required": true}, {"type": "double",
+    "name": "okay", "required": true}, {"type": "double", "name": "old", "required":
+    true}, {"type": "double", "name": "old kanye", "required": true}, {"type": "double",
+    "name": "older", "required": true}, {"type": "double", "name": "omg", "required":
+    true}, {"type": "double", "name": "on", "required": true}, {"type": "double",
+    "name": "one", "required": true}, {"type": "double", "name": "one best", "required":
+    true}, {"type": "double", "name": "opinion", "required": true}, {"type": "double",
+    "name": "original", "required": true}, {"type": "double", "name": "original daft",
+    "required": true}, {"type": "double", "name": "original daft punk", "required":
+    true}, {"type": "double", "name": "original song", "required": true}, {"type":
+    "double", "name": "out", "required": true}, {"type": "double", "name": "page",
+    "required": true}, {"type": "double", "name": "park", "required": true}, {"type":
+    "double", "name": "part", "required": true}, {"type": "double", "name": "part
+    song", "required": true}, {"type": "double", "name": "past", "required": true},
+    {"type": "double", "name": "pay", "required": true}, {"type": "double", "name":
+    "peace", "required": true}, {"type": "double", "name": "people", "required": true},
+    {"type": "double", "name": "people dont", "required": true}, {"type": "double",
+    "name": "people like", "required": true}, {"type": "double", "name": "perfect",
+    "required": true}, {"type": "double", "name": "permission", "required": true},
+    {"type": "double", "name": "person", "required": true}, {"type": "double", "name":
+    "piece", "required": true}, {"type": "double", "name": "place", "required": true},
+    {"type": "double", "name": "play", "required": true}, {"type": "double", "name":
+    "played", "required": true}, {"type": "double", "name": "playing", "required":
+    true}, {"type": "double", "name": "please", "required": true}, {"type": "double",
+    "name": "plus", "required": true}, {"type": "double", "name": "point", "required":
+    true}, {"type": "double", "name": "pop", "required": true}, {"type": "double",
+    "name": "popular", "required": true}, {"type": "double", "name": "por", "required":
+    true}, {"type": "double", "name": "post", "required": true}, {"type": "double",
+    "name": "power", "required": true}, {"type": "double", "name": "ppl", "required":
+    true}, {"type": "double", "name": "prefer", "required": true}, {"type": "double",
+    "name": "president", "required": true}, {"type": "double", "name": "press", "required":
+    true}, {"type": "double", "name": "pretty", "required": true}, {"type": "double",
+    "name": "probably", "required": true}, {"type": "double", "name": "problem", "required":
+    true}, {"type": "double", "name": "producer", "required": true}, {"type": "double",
+    "name": "pump", "required": true}, {"type": "double", "name": "punk", "required":
+    true}, {"type": "double", "name": "punk best", "required": true}, {"type": "double",
+    "name": "punk better", "required": true}, {"type": "double", "name": "punk but",
+    "required": true}, {"type": "double", "name": "punk daft", "required": true},
+    {"type": "double", "name": "punk daft punk", "required": true}, {"type": "double",
+    "name": "punk fan", "required": true}, {"type": "double", "name": "punk ft", "required":
+    true}, {"type": "double", "name": "punk ft kanye", "required": true}, {"type":
+    "double", "name": "punk harder", "required": true}, {"type": "double", "name":
+    "punk harder better", "required": true}, {"type": "double", "name": "punk kanye",
+    "required": true}, {"type": "double", "name": "punk kanye west", "required": true},
+    {"type": "double", "name": "punk made", "required": true}, {"type": "double",
+    "name": "punk make", "required": true}, {"type": "double", "name": "punk music",
+    "required": true}, {"type": "double", "name": "punk not", "required": true}, {"type":
+    "double", "name": "punk original", "required": true}, {"type": "double", "name":
+    "punk sampled", "required": true}, {"type": "double", "name": "punk song", "required":
+    true}, {"type": "double", "name": "punk stronger", "required": true}, {"type":
+    "double", "name": "punk version", "required": true}, {"type": "double", "name":
+    "punk video", "required": true}, {"type": "double", "name": "put", "required":
+    true}, {"type": "double", "name": "que", "required": true}, {"type": "double",
+    "name": "quebrando", "required": true}, {"type": "double", "name": "quebrando
+    regras", "required": true}, {"type": "double", "name": "quem", "required": true},
+    {"type": "double", "name": "racist", "required": true}, {"type": "double", "name":
+    "radio", "required": true}, {"type": "double", "name": "rap", "required": true},
+    {"type": "double", "name": "rapper", "required": true}, {"type": "double", "name":
+    "rapping", "required": true}, {"type": "double", "name": "read", "required": true},
+    {"type": "double", "name": "reading", "required": true}, {"type": "double", "name":
+    "real", "required": true}, {"type": "double", "name": "real shit", "required":
+    true}, {"type": "double", "name": "real shit anymore", "required": true}, {"type":
+    "double", "name": "realize", "required": true}, {"type": "double", "name": "realized",
+    "required": true}, {"type": "double", "name": "really", "required": true}, {"type":
+    "double", "name": "really good", "required": true}, {"type": "double", "name":
+    "reason", "required": true}, {"type": "double", "name": "reference", "required":
+    true}, {"type": "double", "name": "regras", "required": true}, {"type": "double",
+    "name": "released", "required": true}, {"type": "double", "name": "remember",
+    "required": true}, {"type": "double", "name": "reminds", "required": true}, {"type":
+    "double", "name": "remix", "required": true}, {"type": "double", "name": "respect",
+    "required": true}, {"type": "double", "name": "rest", "required": true}, {"type":
+    "double", "name": "ride", "required": true}, {"type": "double", "name": "right",
+    "required": true}, {"type": "double", "name": "right now", "required": true},
+    {"type": "double", "name": "rip", "required": true}, {"type": "double", "name":
+    "rip kanye", "required": true}, {"type": "double", "name": "rip ride", "required":
+    true}, {"type": "double", "name": "ripped", "required": true}, {"type": "double",
+    "name": "roblox", "required": true}, {"type": "double", "name": "robot", "required":
+    true}, {"type": "double", "name": "rock", "required": true}, {"type": "double",
+    "name": "ruin", "required": true}, {"type": "double", "name": "ruined", "required":
+    true}, {"type": "double", "name": "run", "required": true}, {"type": "double",
+    "name": "sad", "required": true}, {"type": "double", "name": "said", "required":
+    true}, {"type": "double", "name": "sample", "required": true}, {"type": "double",
+    "name": "sampled", "required": true}, {"type": "double", "name": "sampling", "required":
+    true}, {"type": "double", "name": "saw", "required": true}, {"type": "double",
+    "name": "say", "required": true}, {"type": "double", "name": "say kanye", "required":
+    true}, {"type": "double", "name": "saying", "required": true}, {"type": "double",
+    "name": "scene", "required": true}, {"type": "double", "name": "school", "required":
+    true}, {"type": "double", "name": "se", "required": true}, {"type": "double",
+    "name": "search", "required": true}, {"type": "double", "name": "second", "required":
+    true}, {"type": "double", "name": "see", "required": true}, {"type": "double",
+    "name": "seeing", "required": true}, {"type": "double", "name": "seems", "required":
+    true}, {"type": "double", "name": "seen", "required": true}, {"type": "double",
+    "name": "sense", "required": true}, {"type": "double", "name": "seriously", "required":
+    true}, {"type": "double", "name": "shade", "required": true}, {"type": "double",
+    "name": "shadyvox", "required": true}, {"type": "double", "name": "shit", "required":
+    true}, {"type": "double", "name": "shit anymore", "required": true}, {"type":
+    "double", "name": "shitty", "required": true}, {"type": "double", "name": "show",
+    "required": true}, {"type": "double", "name": "shut", "required": true}, {"type":
+    "double", "name": "shut fuck", "required": true}, {"type": "double", "name": "si",
+    "required": true}, {"type": "double", "name": "sick", "required": true}, {"type":
+    "double", "name": "since", "required": true}, {"type": "double", "name": "sing",
+    "required": true}, {"type": "double", "name": "singer", "required": true}, {"type":
+    "double", "name": "singing", "required": true}, {"type": "double", "name": "single",
+    "required": true}, {"type": "double", "name": "so", "required": true}, {"type":
+    "double", "name": "someone", "required": true}, {"type": "double", "name": "something",
+    "required": true}, {"type": "double", "name": "son", "required": true}, {"type":
+    "double", "name": "song", "required": true}, {"type": "double", "name": "song
+    but", "required": true}, {"type": "double", "name": "song came", "required": true},
+    {"type": "double", "name": "song daft", "required": true}, {"type": "double",
+    "name": "song daft punk", "required": true}, {"type": "double", "name": "song
+    ever", "required": true}, {"type": "double", "name": "song good", "required":
+    true}, {"type": "double", "name": "song kanye", "required": true}, {"type": "double",
+    "name": "song kanye west", "required": true}, {"type": "double", "name": "song
+    like", "required": true}, {"type": "double", "name": "song made", "required":
+    true}, {"type": "double", "name": "song make", "required": true}, {"type": "double",
+    "name": "song never", "required": true}, {"type": "double", "name": "song not",
+    "required": true}, {"type": "double", "name": "song still", "required": true},
+    {"type": "double", "name": "song time", "required": true}, {"type": "double",
+    "name": "song would", "required": true}, {"type": "double", "name": "songs", "required":
+    true}, {"type": "double", "name": "sorry", "required": true}, {"type": "double",
+    "name": "sound", "required": true}, {"type": "double", "name": "sound like", "required":
+    true}, {"type": "double", "name": "south", "required": true}, {"type": "double",
+    "name": "south park", "required": true}, {"type": "double", "name": "speed", "required":
+    true}, {"type": "double", "name": "stand", "required": true}, {"type": "double",
+    "name": "star", "required": true}, {"type": "double", "name": "start", "required":
+    true}, {"type": "double", "name": "started", "required": true}, {"type": "double",
+    "name": "stay", "required": true}, {"type": "double", "name": "steal", "required":
+    true}, {"type": "double", "name": "stealing", "required": true}, {"type": "double",
+    "name": "stfu", "required": true}, {"type": "double", "name": "still", "required":
+    true}, {"type": "double", "name": "still good", "required": true}, {"type": "double",
+    "name": "still listening", "required": true}, {"type": "double", "name": "still
+    love", "required": true}, {"type": "double", "name": "stole", "required": true},
+    {"type": "double", "name": "stolen", "required": true}, {"type": "double", "name":
+    "stop", "required": true}, {"type": "double", "name": "straight", "required":
+    true}, {"type": "double", "name": "strong", "required": true}, {"type": "double",
+    "name": "stronger", "required": true}, {"type": "double", "name": "stronger daft",
+    "required": true}, {"type": "double", "name": "stronger daft punk", "required":
+    true}, {"type": "double", "name": "stronger kanye", "required": true}, {"type":
+    "double", "name": "stronger need", "required": true}, {"type": "double", "name":
+    "stuff", "required": true}, {"type": "double", "name": "stupid", "required": true},
+    {"type": "double", "name": "style", "required": true}, {"type": "double", "name":
+    "subscribe", "required": true}, {"type": "double", "name": "suck", "required":
+    true}, {"type": "double", "name": "sucks", "required": true}, {"type": "double",
+    "name": "super", "required": true}, {"type": "double", "name": "support", "required":
+    true}, {"type": "double", "name": "sure", "required": true}, {"type": "double",
+    "name": "swift", "required": true}, {"type": "double", "name": "take", "required":
+    true}, {"type": "double", "name": "talent", "required": true}, {"type": "double",
+    "name": "talented", "required": true}, {"type": "double", "name": "talk", "required":
+    true}, {"type": "double", "name": "talking", "required": true}, {"type": "double",
+    "name": "taylor", "required": true}, {"type": "double", "name": "taylor swift",
+    "required": true}, {"type": "double", "name": "te", "required": true}, {"type":
+    "double", "name": "techno", "required": true}, {"type": "double", "name": "tell",
+    "required": true}, {"type": "double", "name": "tetsuo", "required": true}, {"type":
+    "double", "name": "thank", "required": true}, {"type": "double", "name": "thanks",
+    "required": true}, {"type": "double", "name": "that", "required": true}, {"type":
+    "double", "name": "thats", "required": true}, {"type": "double", "name": "thats
+    long", "required": true}, {"type": "double", "name": "them", "required": true},
+    {"type": "double", "name": "theme", "required": true}, {"type": "double", "name":
+    "then", "required": true}, {"type": "double", "name": "there", "required": true},
+    {"type": "double", "name": "theyre", "required": true}, {"type": "double", "name":
+    "thing", "required": true}, {"type": "double", "name": "think", "required": true},
+    {"type": "double", "name": "think kanye", "required": true}, {"type": "double",
+    "name": "thinking", "required": true}, {"type": "double", "name": "this", "required":
+    true}, {"type": "double", "name": "tho", "required": true}, {"type": "double",
+    "name": "though", "required": true}, {"type": "double", "name": "thought", "required":
+    true}, {"type": "double", "name": "thousand", "required": true}, {"type": "double",
+    "name": "thumb", "required": true}, {"type": "double", "name": "till", "required":
+    true}, {"type": "double", "name": "time", "required": true}, {"type": "double",
+    "name": "times", "required": true}, {"type": "double", "name": "title", "required":
+    true}, {"type": "double", "name": "to", "required": true}, {"type": "double",
+    "name": "today", "required": true}, {"type": "double", "name": "together", "required":
+    true}, {"type": "double", "name": "told", "required": true}, {"type": "double",
+    "name": "tonight", "required": true}, {"type": "double", "name": "too", "required":
+    true}, {"type": "double", "name": "took", "required": true}, {"type": "double",
+    "name": "top", "required": true}, {"type": "double", "name": "top comment", "required":
+    true}, {"type": "double", "name": "totally", "required": true}, {"type": "double",
+    "name": "track", "required": true}, {"type": "double", "name": "trailer", "required":
+    true}, {"type": "double", "name": "troll", "required": true}, {"type": "double",
+    "name": "tron", "required": true}, {"type": "double", "name": "true", "required":
+    true}, {"type": "double", "name": "trump", "required": true}, {"type": "double",
+    "name": "try", "required": true}, {"type": "double", "name": "trying", "required":
+    true}, {"type": "double", "name": "tune", "required": true}, {"type": "double",
+    "name": "turn", "required": true}, {"type": "double", "name": "two", "required":
+    true}, {"type": "double", "name": "type", "required": true}, {"type": "double",
+    "name": "um", "required": true}, {"type": "double", "name": "un", "required":
+    true}, {"type": "double", "name": "understand", "required": true}, {"type": "double",
+    "name": "universal", "required": true}, {"type": "double", "name": "up", "required":
+    true}, {"type": "double", "name": "ur", "required": true}, {"type": "double",
+    "name": "use", "required": true}, {"type": "double", "name": "used", "required":
+    true}, {"type": "double", "name": "using", "required": true}, {"type": "double",
+    "name": "version", "required": true}, {"type": "double", "name": "version better",
+    "required": true}, {"type": "double", "name": "vevo", "required": true}, {"type":
+    "double", "name": "vibe", "required": true}, {"type": "double", "name": "vid",
+    "required": true}, {"type": "double", "name": "video", "required": true}, {"type":
+    "double", "name": "view", "required": true}, {"type": "double", "name": "views",
+    "required": true}, {"type": "double", "name": "voice", "required": true}, {"type":
+    "double", "name": "wait", "required": true}, {"type": "double", "name": "wait
+    much", "required": true}, {"type": "double", "name": "wait much longer", "required":
+    true}, {"type": "double", "name": "waiting", "required": true}, {"type": "double",
+    "name": "wanna", "required": true}, {"type": "double", "name": "want", "required":
+    true}, {"type": "double", "name": "wanted", "required": true}, {"type": "double",
+    "name": "wasnt", "required": true}, {"type": "double", "name": "watch", "required":
+    true}, {"type": "double", "name": "watch dog", "required": true}, {"type": "double",
+    "name": "watched", "required": true}, {"type": "double", "name": "watching", "required":
+    true}, {"type": "double", "name": "way", "required": true}, {"type": "double",
+    "name": "way better", "required": true}, {"type": "double", "name": "weird", "required":
+    true}, {"type": "double", "name": "well", "required": true}, {"type": "double",
+    "name": "went", "required": true}, {"type": "double", "name": "west", "required":
+    true}, {"type": "double", "name": "west daft", "required": true}, {"type": "double",
+    "name": "west daft punk", "required": true}, {"type": "double", "name": "west
+    song", "required": true}, {"type": "double", "name": "west stronger", "required":
+    true}, {"type": "double", "name": "what", "required": true}, {"type": "double",
+    "name": "whatever", "required": true}, {"type": "double", "name": "whats", "required":
+    true}, {"type": "double", "name": "white", "required": true}, {"type": "double",
+    "name": "whole", "required": true}, {"type": "double", "name": "whopper", "required":
+    true}, {"type": "double", "name": "why", "required": true}, {"type": "double",
+    "name": "win", "required": true}, {"type": "double", "name": "wish", "required":
+    true}, {"type": "double", "name": "without", "required": true}, {"type": "double",
+    "name": "wonder", "required": true}, {"type": "double", "name": "wont", "required":
+    true}, {"type": "double", "name": "word", "required": true}, {"type": "double",
+    "name": "work", "required": true}, {"type": "double", "name": "work harder", "required":
+    true}, {"type": "double", "name": "work harder make", "required": true}, {"type":
+    "double", "name": "work it", "required": true}, {"type": "double", "name": "worked",
+    "required": true}, {"type": "double", "name": "working", "required": true}, {"type":
+    "double", "name": "workout", "required": true}, {"type": "double", "name": "world",
+    "required": true}, {"type": "double", "name": "would", "required": true}, {"type":
+    "double", "name": "wouldnt", "required": true}, {"type": "double", "name": "wow",
+    "required": true}, {"type": "double", "name": "write", "required": true}, {"type":
+    "double", "name": "wrong", "required": true}, {"type": "double", "name": "wronger",
+    "required": true}, {"type": "double", "name": "wtf", "required": true}, {"type":
+    "double", "name": "xd", "required": true}, {"type": "double", "name": "ya", "required":
+    true}, {"type": "double", "name": "yall", "required": true}, {"type": "double",
+    "name": "ye", "required": true}, {"type": "double", "name": "yea", "required":
+    true}, {"type": "double", "name": "yeah", "required": true}, {"type": "double",
+    "name": "year", "required": true}, {"type": "double", "name": "year ago", "required":
+    true}, {"type": "double", "name": "year later", "required": true}, {"type": "double",
+    "name": "year old", "required": true}, {"type": "double", "name": "years", "required":
+    true}, {"type": "double", "name": "yeezy", "required": true}, {"type": "double",
+    "name": "yes", "required": true}, {"type": "double", "name": "yet", "required":
+    true}, {"type": "double", "name": "yo", "required": true}, {"type": "double",
+    "name": "you", "required": true}, {"type": "double", "name": "youll", "required":
+    true}, {"type": "double", "name": "young", "required": true}, {"type": "double",
+    "name": "youre", "required": true}, {"type": "double", "name": "youtube", "required":
+    true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-07-20 12:30:39.900512'

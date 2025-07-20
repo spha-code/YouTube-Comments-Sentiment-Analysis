@@ -1,0 +1,13 @@
+scikit-learn
+pandas
+matplotlib
+seaborn
+google-api-python-client
+mlflow
+nltk
+WordCloud
+transformers
+boto3
+awscli
+dvc==3.53.0
+-e .

@@ -1,0 +1,21 @@
+artifact_path: random_forest_model_tfidf_trigrams_3000
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.0
+mlflow_version: 2.22.1
+model_size_bytes: 11261702
+model_uuid: a342385eb78f451087939e15cf68b2c7
+prompts: null
+run_id: 5712bec6f3d94f61a1d817229f513a0b
+utc_time_created: '2025-07-19 15:23:40.436156'

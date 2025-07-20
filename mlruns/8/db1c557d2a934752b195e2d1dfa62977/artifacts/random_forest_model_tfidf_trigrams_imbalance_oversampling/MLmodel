@@ -1,0 +1,21 @@
+artifact_path: random_forest_model_tfidf_trigrams_imbalance_oversampling
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+mlflow_version: 2.22.1
+model_size_bytes: 9091221
+model_uuid: 70d51c5606a94f8583b08ffb10d16519
+prompts: null
+run_id: db1c557d2a934752b195e2d1dfa62977
+utc_time_created: '2025-07-19 15:35:19.824861'
