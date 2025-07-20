@@ -10,7 +10,7 @@ The following script is used to collect YouTube comments via the YouTube Data AP
  
  4. Build Baseline Model
  
- 5. Setup MLflow server on locally - Experiment Tracking
+ 5. Setup MLflow server locally for Experiment Tracking
  
  6. Improve Baseline Model
      - TFIDF
@@ -21,6 +21,9 @@ The following script is used to collect YouTube comments via the YouTube Data AP
      - Stacking Model
        
   7. ML Pipeline using DVC
+
+     git init, dvc init
+     
      - Data Ingestion
      - Data PreProcessing
      - Model Building
