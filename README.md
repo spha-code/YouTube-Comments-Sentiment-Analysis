@@ -1,10 +1,18 @@
 # YouTube Comments Sentiment Analysis
 
- ## 1. Data Collection
+ ## 1. Data Collection and Dataset Construction
 
-The following script is used to collect YouTube comments via the YouTube Data API:
+The dataset was created by collecting YouTube comments using the YouTube Data API. This process is handled by the following script:
 
-📄 [00_Python_YouTube_Comments_Scraper.py](https://github.com/spha-code/YouTube_Comments_Sentiment_Analysis/blob/main/00_Python_YouTube_Comments_Scraper.py)
+📄 00_Python_YouTube_Comments_Scraper.py
+
+This script retrieves comments from selected YouTube videos and formats them for further analysis.
+
+🗃️ The resulting dataset is available on Kaggle:
+Kanye West YouTube Comments Sentiment Analysis
+https://www.kaggle.com/datasets/sphacode/kanye-west-youtube-comments-sentiment-analysis
+
+-----
 
  3. Data Preprocessing and EDA (Exported Data Analysis)
  
