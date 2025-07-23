@@ -2,7 +2,7 @@
 
  ## 1. Data Collection and Dataset Construction
 
-The dataset was created by collecting YouTube comments using the YouTube Data API. This process is handled by the following script:
+The dataset Kanye West YouTube Comments Sentiment Analysis was created by collecting YouTube comments using the YouTube Data API. This process is handled by the following script:
 
 📄 [00_Python_YouTube_Comments_Scraper.py](https://github.com/spha-code/YouTube-Comments-Sentiment-Analysis-MLOps/blob/main/00_YouTube_Comments_Scraper.py)
 
