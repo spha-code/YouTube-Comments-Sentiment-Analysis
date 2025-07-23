@@ -15,8 +15,10 @@ Kanye West YouTube Comments Sentiment Analysis
 
 -----
 
- 2. Data Preprocessing and EDA (Exported Data Analysis)
- 
+ ## 2. Data Preprocessing and EDA (Exported Data Analysis)
+
+-----
+
  3. Build Baseline Model
  
  4. Setup MLflow server locally for Experiment Tracking
