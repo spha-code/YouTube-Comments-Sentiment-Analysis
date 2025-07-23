@@ -9,7 +9,7 @@ from urllib.parse import urlparse, parse_qs
 # --- Configuration ---
 # IMPORTANT: Replace 'YOUR_API_KEY' with your actual YouTube Data API key.
 # For security, consider storing this in an environment variable instead of directly in the script.
-API_KEY = 'AIzaSyB6N32Bo8-l-mUf70_co2f2RBO9m-g9YPk'
+API_KEY = 'YOUR_API_KEY'
 
 # Initialize YouTube API client
 try:
