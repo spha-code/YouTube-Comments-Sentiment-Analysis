@@ -4,23 +4,24 @@
 
 The dataset was created by collecting YouTube comments using the YouTube Data API. This process is handled by the following script:
 
-📄 00_Python_YouTube_Comments_Scraper.py
+📄 [00_Python_YouTube_Comments_Scraper.py](https://github.com/spha-code/YouTube-Comments-Sentiment-Analysis-MLOps/blob/main/00_YouTube_Comments_Scraper.py)
 
 This script retrieves comments from selected YouTube videos and formats them for further analysis.
 
-🗃️ The resulting dataset is available on Kaggle:
+The resulting dataset is available on Kaggle:
 Kanye West YouTube Comments Sentiment Analysis
-https://www.kaggle.com/datasets/sphacode/kanye-west-youtube-comments-sentiment-analysis
+
+🗃️ https://www.kaggle.com/datasets/sphacode/kanye-west-youtube-comments-sentiment-analysis
 
 -----
 
- 3. Data Preprocessing and EDA (Exported Data Analysis)
+ 2. Data Preprocessing and EDA (Exported Data Analysis)
  
- 4. Build Baseline Model
+ 3. Build Baseline Model
  
- 5. Setup MLflow server locally for Experiment Tracking
+ 4. Setup MLflow server locally for Experiment Tracking
  
- 6. Improve Baseline Model
+ 5. Improve Baseline Model
      - TFIDF
      - Max Feature
      - Handling Imbalanced Data
@@ -28,7 +29,7 @@ https://www.kaggle.com/datasets/sphacode/kanye-west-youtube-comments-sentiment-a
      - Multiple Model
      - Stacking Model
        
-  7. ML Pipeline using DVC
+  6. ML Pipeline using DVC
 
      git init, dvc init
      
@@ -38,9 +39,9 @@ https://www.kaggle.com/datasets/sphacode/kanye-west-youtube-comments-sentiment-a
      - Model Evaluation with MLflow
      - Model Register in MLflow
        
-  9. Add to Model Registry
-  10. Implement Chrome plugin
-  11. Prepare CI/CD workflow
-  12. Dockerization
-  13. Deployment - AWS
-  14. Github upload
+  7. Add to Model Registry
+  8. Implement Chrome plugin
+  9. Prepare CI/CD workflow
+  10. Dockerization
+  11. Deployment - AWS
+  12. Github upload
