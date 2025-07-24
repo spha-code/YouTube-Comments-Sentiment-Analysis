@@ -23,15 +23,15 @@ Kanye West YouTube Comments Sentiment Analysis
 
  ### 3. Starting with a Baseline Model
 
-    https://github.com/spha-code/YouTube-Comments-Sentiment-Analysis-MLOps/blob/main/02_MLflow_2_baseline_model.ipynb
+https://github.com/spha-code/YouTube-Comments-Sentiment-Analysis-MLOps/blob/main/02_MLflow_2_baseline_model.ipynb
 
 -----
  
- 5. Setup MLflow server locally for Experiment Tracking
+### 4. Setup MLflow server locally for Experiment Tracking
 
  
  
- 6. Improve Baseline Model
+### 5. Improve Baseline Model
      - TFIDF
      - Max Feature
      - Handling Imbalanced Data
@@ -39,7 +39,7 @@ Kanye West YouTube Comments Sentiment Analysis
      - Multiple Model
      - Stacking Model
        
-  7. ML Pipeline using DVC
+### 6. ML Pipeline using DVC
 
      git init, dvc init
      
@@ -49,9 +49,9 @@ Kanye West YouTube Comments Sentiment Analysis
      - Model Evaluation with MLflow
      - Model Register in MLflow
        
-  8. Add to Model Registry
-  9. Implement Chrome plugin
-  10. Prepare CI/CD workflow
-  11. Dockerization
-  12. Deployment - AWS
-  13. Github upload
+### 7. Add to Model Registry
+### 8. Implement Chrome plugin
+  9. Prepare CI/CD workflow
+  19. Dockerization
+  11. Deployment - AWS
+  12. Github upload
