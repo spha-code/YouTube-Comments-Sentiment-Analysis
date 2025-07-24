@@ -50,11 +50,16 @@ https://github.com/spha-code/YouTube-Comments-Sentiment-Analysis-MLOps/blob/main
      - Model Register in MLflow
        
 ### 7. Add to Model Registry
+
 ### 8. Implement Chrome plugin
+
 ### 9. Prepare CI/CD workflow
 
 https://github.com/spha-code/YouTube-Comments-Sentiment-Analysis-MLOps/blob/main/.github/workflows/cicd.yaml
   
-### 10. Dockerization
+### 10. Dockerfile
+
+https://github.com/spha-code/YouTube-Comments-Sentiment-Analysis-MLOps/blob/main/Docker/Dockerfile
+
 ### 11. Deployment - AWS
 ### 12. Github upload
