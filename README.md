@@ -29,7 +29,13 @@ https://github.com/spha-code/YouTube-Comments-Sentiment-Analysis-MLOps/blob/main
  
 ### 4. Setup MLflow server locally for Experiment Tracking
 
- 
+#### RUN THIS COMMAND IN TERMINAL:
+```mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlruns --host 127.0.0.1 --port 5000```
+
+```import mlflow```
+
+#### Set local MLflow tracking URI
+```mlflow.set_tracking_uri("http://127.0.0.1:5000")```
  
 ### 5. Improve Baseline Model
      - TFIDF
