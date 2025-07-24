@@ -1,6 +1,6 @@
 # YouTube Comments Sentiment Analysis
 
- ## 1. Data Collection and Dataset Construction
+ ### 1. Data Collection and Dataset Construction
 
 The dataset Kanye West YouTube Comments Sentiment Analysis was created by collecting YouTube comments using the YouTube Data API. This process is handled by the following script:
 
@@ -15,19 +15,23 @@ Kanye West YouTube Comments Sentiment Analysis
 
 -----
 
- ## 2. Data Preprocessing and EDA (Exported Data Analysis)
+ ### 2. Data Preprocessing and EDA (Exported Data Analysis)
+
+ https://github.com/spha-code/YouTube-Comments-Sentiment-Analysis-MLOps/blob/main/02_experiment_1_MLflow_Baseline_Model.ipynb
 
 -----
 
- 3. Starting with a Baseline Model
+ ### 3. Starting with a Baseline Model
 
     https://github.com/spha-code/YouTube-Comments-Sentiment-Analysis-MLOps/blob/main/02_MLflow_2_baseline_model.ipynb
+
+-----
  
- 4. Setup MLflow server locally for Experiment Tracking
+ 5. Setup MLflow server locally for Experiment Tracking
 
  
  
- 5. Improve Baseline Model
+ 6. Improve Baseline Model
      - TFIDF
      - Max Feature
      - Handling Imbalanced Data
@@ -35,7 +39,7 @@ Kanye West YouTube Comments Sentiment Analysis
      - Multiple Model
      - Stacking Model
        
-  6. ML Pipeline using DVC
+  7. ML Pipeline using DVC
 
      git init, dvc init
      
@@ -45,9 +49,9 @@ Kanye West YouTube Comments Sentiment Analysis
      - Model Evaluation with MLflow
      - Model Register in MLflow
        
-  7. Add to Model Registry
-  8. Implement Chrome plugin
-  9. Prepare CI/CD workflow
-  10. Dockerization
-  11. Deployment - AWS
-  12. Github upload
+  8. Add to Model Registry
+  9. Implement Chrome plugin
+  10. Prepare CI/CD workflow
+  11. Dockerization
+  12. Deployment - AWS
+  13. Github upload
