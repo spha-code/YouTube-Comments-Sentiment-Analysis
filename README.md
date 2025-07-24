@@ -20,6 +20,8 @@ Kanye West YouTube Comments Sentiment Analysis
 -----
 
  3. Build Baseline Model
+
+    https://github.com/spha-code/YouTube-Comments-Sentiment-Analysis-MLOps/blob/main/02_MLflow_2_baseline_model.ipynb
  
  4. Setup MLflow server locally for Experiment Tracking
  
